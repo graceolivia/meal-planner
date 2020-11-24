@@ -1,12 +1,37 @@
 import random
-thisweek = []
-meals = list(open("meals.txt", "r"))
-# print(meals)
+import json
 
-#pick 3 randoms
+thisweek = []
+meals = list(open("text/meals.txt", "r"))
+lastweek = list(open("text/history.txt", "r"))
+for j in range(7):
+    lastweek[j] = lastweek[j].strip('\n')
+
+#make list without last week's options: list comprehension
+options = [x for x in meals if x not in lastweek]
+for u in range(len(options)):
+    options[u] = options[u].strip('\n')
+
+print(options)
+#pick random names
 for i in range(7):
-    thisweek.append((random.choice(meals)))
+    newmeal = (random.choice(options))
+    # check that this meal already in isn't in this week's meals
+    while newmeal in thisweek:
+        newmeal = (random.choice(options))
+    thisweek.append(newmeal)
 
 for j in range(7):
     thisweek[j] = thisweek[j].strip('\n')
-    print thisweek[j]
+
+#check what we have
+print("last week:")
+print(lastweek)
+print("this week:")
+print(thisweek)
+
+#write last week's history
+with open('text/history.txt', 'w') as history:
+    for meal in thisweek:
+        history.write(str(meal))
+        history.write("\n")

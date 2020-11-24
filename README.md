@@ -4,6 +4,12 @@ It will take in my recipes and give me a weekly meal plan.
 
 The recipes will be in dict form, have tags, and be randomized.
 
+Current tags:
+-Pasta
+-ricebowl
+-pizza
+-beans
+
 Based off this reddit idea:
 
 "My fiancee loves to cook for us but hates picking meals and making shopping lists. Now she and I get an email once a week with all of our meals for the coming week and the ingredients we need to buy.

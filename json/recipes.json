@@ -1,0 +1,39 @@
+[
+  {
+    "name":"Garlic Soy Pasta",
+    "tag":"pasta",
+    "link":"https://www.marionskitchen.com/spicy-garlic-butter-linguini/",
+    "ingredients":[
+      "garlic",
+      "pasta",
+      "butter",
+      "soy sauce",
+      "green onions",
+      "chili flakes"
+    ]
+  },
+  {
+    "name":"General Tso Tofu",
+    "tag":"ricebowl",
+    "link":"https://omnivorescookbook.com/general-tso-sauce/",
+    "ingredients": [
+      "garlic",
+      "pasta",
+      "butter",
+      "soy sauce",
+      "green onions",
+      "chili flakes"
+    ]
+  },
+  {
+  "name":"Coconut Lentils",
+  "tag":"beans",
+  "link":"",
+  "ingredients":[
+    "lentils",
+    "coconut milk",
+    "curry powder",
+    "garlic",
+    "ginger"
+  ]}
+]
