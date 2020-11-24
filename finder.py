@@ -3,16 +3,21 @@ import json
 
 thisweek = []
 meals = list(open("text/meals.txt", "r"))
+for y in range(len(meals)):
+    meals[y] = meals[y].strip('\n')
 lastweek = list(open("text/history.txt", "r"))
 for j in range(7):
     lastweek[j] = lastweek[j].strip('\n')
+options = []
 
 #make list without last week's options: list comprehension
+# THIS IS WHERE IM HAVING PROBLEMS! i can't remove last week's stuff
 options = [x for x in meals if x not in lastweek]
+
+# do the strip thing
 for u in range(len(options)):
     options[u] = options[u].strip('\n')
 
-print(options)
 #pick random names
 for i in range(7):
     newmeal = (random.choice(options))
