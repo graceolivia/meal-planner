@@ -11,7 +11,6 @@ for j in range(7):
 options = []
 
 #make list without last week's options: list comprehension
-# THIS IS WHERE IM HAVING PROBLEMS! i can't remove last week's stuff
 options = [x for x in meals if x not in lastweek]
 
 # do the strip thing
