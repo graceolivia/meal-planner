@@ -19,6 +19,7 @@ Edit: For those asking for more information, it's actually really simple! My fia
 If we want to make any changes or try a new recipe, I just update it manually. I've been meaning to refactor as well as add a feature that will suggest new recipes for us, but I haven't gotten around to it. Let me know if you all have any suggestions or questions!"
 
 Things To Do:
-[] initial recipe finder
+[x] initial recipe finder
 [] schedule mailing
 [] cron job
+[] advanced recipe finder
