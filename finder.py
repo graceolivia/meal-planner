@@ -1,6 +1,9 @@
 import random
 import json
 
+
+
+
 thisweek = []
 meals = list(open("text/meals.txt", "r"))
 for y in range(len(meals)):
@@ -39,3 +42,6 @@ with open('text/history.txt', 'w') as history:
     for meal in thisweek:
         history.write(str(meal))
         history.write("\n")
+
+#email sender - in progress
+import emailer
